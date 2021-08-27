@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+<section class="sub-header">
+<nav>
+<a href="index.html"><img src="images/logo.png"></a>
+<div class="nav-links" id="navLinks">
+  <i class="fa fa-times" onclick="hideMenu()"></i>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="projects.html">PROJECTS</a></li>
+    <li><a href="resume.html">RESUME</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+  </ul>
+  </div>
+  <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+  <h1>About Me</h1>
+</section>
+
+<!--- About Me Content --->
+
+<section class="about">
+
+  <div class="row">
+    <div class="about-col">
+      <h1>Get to know me</h1>
+      <p>Hello! my name is Emile Cayer and I am a SNHU (Southern New Hampshire University) student majoring in computer science. So far I have been self taught
+        for the better part of the past year and a half. Learning everything that I can to get a leg-up in the world of CS I have focused on HTML5, CSS,
+        and Javascript but have also dove into the world of networking. Linux, IOT, and Powershell have been some of my areas of focus for personal study
+        which you will see a project for. I currently live in the beautiful state of New Hampshire and have my entire life, moving from small towns to small cities.
+        I love to take advantage of the scenery around my area and take photos while hiking, kayaking, and trail-walking and upload them to my portofilio
+        site that I have built using Adobe Portfolio. </p>
+    <a href="projects.html" class="hero-btn red-btn">My Projects</a>
+  </div>
+    <div class="about-col">
+      <img src="images/me.jpg">
+    </div>
+  </div>
+</section>
+
+  <!--- Footer --->
+
+  <section class="footer">
+    <h4>Find Me On The Web</h4>
+  <div class="icons">
+    <a href="https://www.instagram.com/awanderersguide" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/emilecayer" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.github.com/emiledev" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+<!---Javascript for Toggle Menu--->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+  navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+    }
+
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+<section class="sub-header2">
+<nav>
+<a href="index.html"><img src="images/logo.png"></a>
+<div class="nav-links" id="navLinks">
+  <i class="fa fa-times" onclick="hideMenu()"></i>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="projects.html">PROJECTS</a></li>
+    <li><a href="resume.html">RESUME</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+  </ul>
+  </div>
+  <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+  <h1>My Projects</h1>
+</section>
+
+<!--- Projects --->
+
+<section class="projectshome">
+  <h1>Coding and Networking Projects</h1>
+
+  <div class="row">
+    <div class="projectshome-col">
+      <img src="images/raspberry.jpg">
+      <div class="layer">
+        <h3><a class='btnlink' href='projects.html'>Raspberry Pi</a></h3>
+        </div>
+      </div>
+      <div class="projectshome-col">
+        <img src="images/wix.jpg">
+        <div class="layer">
+          <h3><a class='btnlink' href='https://emilecayer.wixsite.com/topmanclothing' target="_blank">Wix Site</a></h3>
+          </div>
+        </div>
+      <div class="projectshome-col">
+        <img src="images/mysite.jpg">
+        <div class="layer">
+          <h3><a class='btnlink' href='https://emilecayer.myportfolio.com/work' target="_blank">Photography Portfolio Site</a></h3>
+          </div>
+        </div>
+        <div class="projectshome-col">
+          <img src="images/book.jpg">
+          <div class="layer">
+            <h3><a class='btnlink' href='file:///C:/Users/emile/OneDrive/Desktop/New%20Root/index.html' target="_blank">Jon Duckett:"HTML&CSS" book written in code</a></h3>
+            </div>
+          </div>
+    </div>
+  </section>
+
+
+<section class="projects">
+
+<div class="row">
+  <div class="projects1-col">
+    <h3>Raspberry Pi</h3>
+    <p>My Raspberry Pi project was setting up what is called a "Pihole" for my home network. As per <a href="https://blacklab.net/pi-hole-what-is-it/" target="_blank">blacklab.net:</a>
+    Pi-hole is network-based ad-blocking software, and a custom DNS server for Raspberry Pi devices running Raspbian. It blocks ads from being displayed on the devices on your network.
+    It uses DNS sinkholing and blocklists as a way of stopping internet ads, malware, malvertising, etc. It’s similar to the popular browser extensions Adblock Plus
+    and uBlock Origin, however it does it for all your devices on your network. It can block YouTube ads and some in-app advertisements on mobile devices... <br>...
+    Unlike browser extensions, Pi-hole blocks ads for every device connected to it. You have full control of what lists you subscribe to and untimely block. There’s
+    usually no need to do any additional configuration on the device itself. For example, you could buy a new tablet and, as soon as it is connected to your wifi, it
+    will immediately stop displaying ads in the web browser and most apps. Pi-hole stops ads before they are downloaded, so your network will perform better.</p>
+    </div>
+    <div class="projects2-col">
+      <h3>Wix Site</h3>
+      <p>This Wix site showcases a great example of me working with a platform that offers "drag and drop" templates to build HTLML5 websites. For this
+      one in particular I wanted to focus on E-commerce and make it a functional shop. Top Man Clothing is not a real company (however, it could be a
+      clients!) and is not strapped to recieve/process orders. Using Wix gave me a great understanding of these types of platforms and I gained some
+      valueable knowldege and experience in creating a site like this from start to finish.</p>
+      </div>
+    <div class="projects3-col">
+      <h3>Photography Site</h3>
+      <p>My photography site was inspired by wanting to showcase my photos in a more professional manner and wanting the experience of working with a
+      template/style/based platform. I created this site using Adobe Portfolio and attaching Google Analytics to monitor traffic and other KPI's. This
+      project showcases my creativity, versatility, and competency to learning new things.</p>
+      </div>
+      <div class="projects4-col">
+        <h3>Coding A Book</h3>
+        <p>This is where it all started for me. I was interested in learning how to code and I figured, what better way to learn than to pick up a book. Being
+        a hands-on learner I wanted a way to apply what I was learning in real-time, that way I could tinker around and see the changes and progress
+        that I was making. I decided that I would code essentially every single page, using the books examples but my own twist into it here and there. Doing
+        this project was an essential part in me having the knowledge that I do today. Not only was this an educational project but one that I enjoyed and
+        that helped deepen my passion for the world of CS and tech in general.</p>
+        </div>
+</div>
+</section>
+
+
+<!--- Footer --->
+
+<section class="footer">
+  <h4>Find Me On The Web</h4>
+<div class="icons">
+  <a href="https://www.instagram.com/awanderersguide" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/in/emilecayer" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://www.github.com/emiledev" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</section>
+
+<!---Javascript for Toggle Menu--->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+  navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+    }
+
+  </script>
+
+  </body>
+</html>
